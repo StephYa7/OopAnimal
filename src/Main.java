@@ -7,5 +7,7 @@ public class Main {
         zoo.runAnimals();
         System.out.println("Летают");
         zoo.flyAnimals();
+        System.out.println("Плавают");
+        zoo.swimAnimals();
     }
 }

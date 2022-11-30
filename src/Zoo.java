@@ -64,4 +64,22 @@ public class Zoo {
             System.out.printf("%s,%s\n", i.toString(), i.fly());
         }
     }
+
+    public List<Swimmable> getSwimmable() {
+        List<Swimmable> result = new ArrayList<Swimmable>();
+        for (Animal i : animals) {
+            if (i instanceof Swimmable) {
+                result.add((Swimmable) i);
+            }
+        }
+        return result;
+
+
+    }
+
+    public void swimAnimals() {
+        for (Swimmable i : getSwimmable()) {
+            System.out.printf("%s,%s\n", i.toString(), i.swim());
+        }
+    }
 }
