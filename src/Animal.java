@@ -57,6 +57,11 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public abstract String speak();
+    @Override
+    public String toString() {
+        return getName();
+
+
+    }
 }
 
